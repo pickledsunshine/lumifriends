@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="420" height="594" viewBox="0 0 420 594" role="img" aria-label="Lumifriends counter QR card placeholder">
+  <rect width="420" height="594" rx="24" fill="#3d11c3"/>
+  <rect x="24" y="24" width="372" height="546" rx="16" fill="none" stroke="#ffd14a" stroke-opacity="0.4" stroke-width="2"/>
+  <g transform="translate(48 64)">
+    <rect width="34" height="34" rx="9" fill="#ffd14a"/>
+    <text x="46" y="16" fill="#ffffff" font-family="Quicksand, sans-serif" font-size="19" font-weight="700">Lumifriends</text>
+    <text x="46" y="32" fill="#ffffff" fill-opacity="0.65" font-family="Quicksand, sans-serif" font-size="12" font-weight="600">by Lumifin</text>
+  </g>
+  <text x="210" y="176" text-anchor="middle" fill="#ffffff" font-family="Quicksand, sans-serif" font-size="26" font-weight="700">Pay like a local</text>
+  <text x="210" y="206" text-anchor="middle" fill="#ffd14a" font-family="Quicksand, sans-serif" font-size="26" font-weight="700">with Lumifin</text>
+  <rect x="110" y="240" width="200" height="200" rx="16" fill="#ffffff"/>
+  <text x="210" y="330" text-anchor="middle" fill="#766f86" font-family="Quicksand, sans-serif" font-size="13" font-weight="700" letter-spacing="2">QR CODE</text>
+  <text x="210" y="352" text-anchor="middle" fill="#766f86" font-family="Quicksand, sans-serif" font-size="13" font-weight="700" letter-spacing="2">PLACEHOLDER</text>
+  <text x="210" y="486" text-anchor="middle" fill="#ffffff" font-family="Quicksand, sans-serif" font-size="24" font-weight="700" letter-spacing="4">XINCHAO100</text>
+  <text x="210" y="512" text-anchor="middle" fill="#ffffff" fill-opacity="0.7" font-family="Quicksand, sans-serif" font-size="13" font-weight="600">lumifin.io/join/XINCHAO100</text>
+  <text x="210" y="552" text-anchor="middle" fill="#ffffff" fill-opacity="0.45" font-family="Quicksand, sans-serif" font-size="10" font-weight="600" letter-spacing="3">COUNTER QR CARD — PLACEHOLDER ARTWORK</text>
+</svg>

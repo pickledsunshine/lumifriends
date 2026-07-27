@@ -1,0 +1,102 @@
+@import "tailwindcss";
+
+/*
+ * Lumifriends design tokens.
+ * Source of truth: "Lumifriends partner build vF.md" §3 — Brand and visual system.
+ */
+@theme {
+  --color-brand: #3d11c3;
+  --color-brand-hover: #3210a0;
+  --color-brand-deep: #280090;
+  --color-accent: #ffd14a;
+  --color-accent-strong: #b98600;
+
+  --color-heading: #211a35;
+  --color-body: #4e475d;
+  --color-muted: #766f86;
+
+  --color-page: #f7f5fc;
+  --color-surface: #ffffff;
+  --color-surface-purple: #eee9ff;
+  --color-surface-yellow: #fff5cc;
+  --color-line: #e6e1ef;
+
+  --color-success: #239b73;
+  --color-success-soft: #e7f7f1;
+  --color-warning: #d98b16;
+  --color-warning-soft: #fff3db;
+  --color-danger: #c74747;
+  --color-danger-soft: #fdecec;
+
+  --radius-card: 16px;
+  --radius-control: 12px;
+
+  --font-sans: var(--font-quicksand), ui-sans-serif, system-ui, sans-serif;
+
+  --shadow-card: 0 1px 2px rgba(33, 26, 53, 0.04), 0 8px 24px -16px rgba(33, 26, 53, 0.18);
+  --shadow-raised: 0 2px 4px rgba(33, 26, 53, 0.05), 0 16px 32px -20px rgba(33, 26, 53, 0.28);
+}
+
+@layer base {
+  html {
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    background-color: var(--color-page);
+    color: var(--color-body);
+    font-family: var(--font-sans);
+    font-weight: 500;
+    /* Financial figures must align vertically — spec §3 typography. */
+    font-variant-numeric: tabular-nums;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: var(--color-heading);
+    font-weight: 700;
+    text-wrap: balance;
+  }
+
+  /* Every interactive element gets a visible, consistent focus ring — spec §11. */
+  :focus-visible {
+    outline: 2px solid var(--color-brand);
+    outline-offset: 2px;
+    border-radius: 4px;
+  }
+
+  /* Tables and long content scroll inside their own container, never the page. */
+  body {
+    overflow-x: hidden;
+  }
+}
+
+@layer utilities {
+  /* Screen-reader-only text for accessible names on icon-only controls. */
+  .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
